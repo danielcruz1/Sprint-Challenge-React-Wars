@@ -26,13 +26,33 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+ReactJS is a library built specifically to help developers build large scale applications effectivelly (Lambda, TK). It tries to solve the problem of the DOM
+having to handle the many instances of data change that happen naturally on a website. It does this using a virtual environment by storing keeping rendered copies
+of the DOM in memory and making changes to the last version of the DOM when you changes are input by the UI. (https://scotch.io/@anitashah/what-problems-does-reactjs-solve-when-must-you-select-reactjs) 
+
 - [ ] What does it mean to _think_ in react?
+
+ReactJS.org defines thinking in React as a series of steps: 
+Step 1 - Break the UI into A Component Hierarchy
+Step 2 - Build a Static Version in React
+Step 3 - Identify the Minimal Representation of UI State
+Step 4 - Identify Where your state should live
+Step 5 - Add inverse data flow
 
 - [ ] Describe state.
 
+State can be defined as an object that determines how a component renders and behaves (thinkster.io). The Lamda TK uses an example of a soccer game.
+Both teams having scored 3 goals, can be said to have a "state" of the game being "tied'. The next score would alter the "state" of the game, and it would not longer 
+have a "state" of "tied". 
+
 - [ ] Describe props.
 
+Properties that are passed from one component to another. Prop data is read only so that data flow stays clean and organized.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+The TK defines "side effects" as anything that affects somethig outside the scope of the function being executed. E.g. fetching data from an API, timers, and manual 
+manipulation of the DOM. Calling Axios will synch to state. 'useEffect' will sync to prop changes. 
 
 ## Project Set Up
 
