@@ -1,8 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
 
-
-
 const PlayerStyle = styled.div`
 width: 30%;	
 background-color: black;
